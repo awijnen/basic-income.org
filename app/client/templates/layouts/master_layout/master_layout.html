@@ -1,5 +1,9 @@
 <template name="MasterLayout">
   <div class="master-overlay">
+  	{{> yield "topRight"}}
+
   	{{> yield}}
+
+  	{{> yield "bottomRight"}}
   </div>
 </template>

@@ -1,0 +1,42 @@
+/*****************************************************************************/
+/* VoteButtons: Style */
+/*****************************************************************************/
+.vote-buttons {
+	position: absolute;
+	bottom: -40px;
+	background-color: rgba(140, 7, 7, 0.9);
+	width: 30%;
+	min-width: 90px;
+	text-align: center;
+	border-radius: 2px;
+
+	&.yes {
+		left: 10%;
+	}
+
+	&.no {
+		right: 10%;
+	}
+
+	@media screen and (min-width: 600px) {
+		&.yes {
+			left: 15%;
+		}
+
+		&.no {
+			right: 15%;
+		}
+	}
+
+	@media screen and (min-width: 960px) {
+		width: 20%;
+
+		&.yes {
+			left: 20%;
+		}
+
+		&.no {
+			right: 20%;
+		}
+	}
+}
