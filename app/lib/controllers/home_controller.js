@@ -34,6 +34,7 @@ HomeController = RouteController.extend({
     this.next();
   },
   onBeforeAction: function () {
+    this.render('Empty', {to: 'actionButtons'});
     this.next();
   },
 
@@ -47,11 +48,27 @@ HomeController = RouteController.extend({
 
   action: function () {
     this.render('Home');
+    this.render('Question', {to: 'homeContent'})
     this.render('ExplainBasicIncome', {to: 'topRight'});
     this.render('VoteButtons', {to: 'actionButtons'});
   },
+  verify: function () {
+    this.render('Home');
+    this.render('Verify', {to: 'homeContent'});
+  },
+  thanks: function () {
+    this.render('Home');
+    this.render('Thanks', {to: 'homeContent'});
+  },
+  explain: function () {
+    this.render('Home');
+    this.render('Explanation', {to: 'homeContent'});
+  },
+
   onAfterAction: function () {
   },
   onStop: function () {
-  }
+  },
+
+
 });

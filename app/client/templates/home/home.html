@@ -1,16 +1,7 @@
 <template name="Home">
   <div class="home">
-    <h1>
-    	<span class="main">Should everyone</span>
-    	<span class="secondary">
-    		<div class="divider left"></div>
-    		receive an unconditional
-    		<div class="divider right"></div>
-    	</span>
-    	<span class="main">Basic income?</span>
-    </h1>
+    {{> yield "homeContent"}}
 
     {{> yield 'actionButtons'}}
   </div>
-    }
 </template>

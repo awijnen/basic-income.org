@@ -11,16 +11,23 @@ Router.route('/', {
   where: 'client'
 });
 
-Router.route('/votes/verify', {
-	name: 'votes.verify',
-	controller: 'VotesController',
+Router.route('/verify', {
+	name: 'verify',
+	controller: 'HomeController',
 	action: 'verify',
 	where: 'client',
 })
 
-Router.route('/votes/verify', {
-	name: 'votes.thanks',
-	controller: 'VotesController',
+Router.route('/thanks', {
+	name: 'thanks',
+	controller: 'HomeController',
 	action: 'thanks',
+	where: 'client',
+})
+
+Router.route('/explain', {
+	name: 'explain',
+	controller: 'HomeController',
+	action: 'explain',
 	where: 'client',
 })

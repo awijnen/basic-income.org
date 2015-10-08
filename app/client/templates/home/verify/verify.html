@@ -1,0 +1,23 @@
+<template name="Verify">
+  <div id="verify">
+    <h1>
+		<span class="main">Gotcha, Yes it is!</span>
+		<span class="secondary">
+			What did other people say?
+			<br>
+			Please link up your favorite social account to find out!
+		</span>
+	</h1>
+	<div class="social">
+		{{#linkTo route="thanks"}}
+			<img src="icons/post-facebook.svg" rel="Verify with facebook"/>
+		{{/linkTo}}
+		{{#linkTo route="thanks"}}
+			<img src="icons/post-twitter.svg" rel="Verify with twitter"/>
+		{{/linkTo}}
+		{{#linkTo route="thanks"}}
+			<img src="icons/post-linkedin.svg" rel="Verify with linkedin"/>
+		{{/linkTo}}
+	</div>
+  </div>
+</template>
