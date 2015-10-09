@@ -35,6 +35,7 @@ HomeController = RouteController.extend({
   },
   onBeforeAction: function () {
     this.render('Empty', {to: 'actionButtons'});
+    this.render('Empty', {to: 'topRight'});
     this.next();
   },
 
