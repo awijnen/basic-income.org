@@ -1,5 +1,16 @@
 <template name="Thanks">
   <div class="thanks">
     <h1><span class="main">Thanks for your vote</span></h1>
+    <div class="result">
+	  	<div class="count voter-count">
+	  		TOTAL: {{voteCount}}
+	  	</div>
+	  	<div class="count yes-voters">
+	  		YES: {{yesCount}}
+	  	</div>
+	  	<div class="count no-voters">
+	  		NO: {{noCount}}
+	  	</div>
+	  </div>
   </div>
 </template>

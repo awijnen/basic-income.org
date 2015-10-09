@@ -8,6 +8,20 @@ Template.Verify.events({
 				throw new Meteor.error("Facebook verification failed");
 			}
 
+			var userId = Meteor.userId();
+
+			var voteId = Votes.insert({
+				userId: userId,
+				value: Session.get('vote'),
+				createdAt: new Date(),
+			})
+
+			Meteor.users.update({_id: userId}, {
+				$set: {
+					"profile.voteId": voteId,
+				}
+			})
+
 			Router.go("thanks");
 		});
 	},

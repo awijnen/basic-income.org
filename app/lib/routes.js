@@ -7,20 +7,20 @@ Router.configure({
 
 Router.route('/', {
   name: 'home',
-  controller: 'HomeController',
+  controller: 'QuestionController',
   where: 'client'
 });
 
 Router.route('/verify', {
 	name: 'verify',
-	controller: 'HomeController',
+	controller: 'VerifyController',
 	action: 'verify',
 	where: 'client',
 })
 
 Router.route('/thanks', {
 	name: 'thanks',
-	controller: 'HomeController',
+	controller: 'ThanksController',
 	action: 'thanks',
 	where: 'client',
 })
