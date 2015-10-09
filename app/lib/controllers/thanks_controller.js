@@ -2,6 +2,11 @@ ThanksController = HomeController.extend({
 	subscriptions: function() {
   		this.subscribe('votes');
   	},
+  	onRun: function () {
+	    analytics.page('Thanks page');
+	    this.next();
+	},
+
   	onBeforeAction: function () {
 	    if (!Meteor.user()) this.redirect('home');
 	    else {

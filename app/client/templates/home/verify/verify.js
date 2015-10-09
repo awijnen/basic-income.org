@@ -22,6 +22,10 @@ Template.Verify.events({
 				}
 			})
 
+			analytics.track("Verified vote", {
+			  account: "facebook",
+			});
+
 			Router.go("thanks");
 		});
 	},

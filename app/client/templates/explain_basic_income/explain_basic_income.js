@@ -2,6 +2,9 @@
 /* ExplainBasicIncome: Event Handlers */
 /*****************************************************************************/
 Template.ExplainBasicIncome.events({
+	'click .explain-basic-income': function(e ,tmpl) {
+		analytics.track("Needed an explanation", {});
+	}
 });
 
 /*****************************************************************************/

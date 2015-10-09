@@ -4,10 +4,16 @@
 Template.VoteButtons.events({
 	'click .vote-buttons.yes': function(e, tmpl) {
 		Session.set('vote', 'yes');
+		analytics.track("Voted", {
+		  vote: "yes",
+		});
 	},
 
 	'click .vote-buttons.no': function(e, tmpl) {
 		Session.set('vote', 'no');
+		analytics.track("Voted", {
+		  vote: "no",
+		});
 	},
 });
 
