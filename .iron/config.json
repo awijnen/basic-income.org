@@ -18,5 +18,11 @@
 
   "generator": {
     "comments": "true"
+  },
+
+  "mup": {
+    "version": "mup|mupx",
+    "development": "/config/development",
+    "production": "/config/production"
   }
 }
