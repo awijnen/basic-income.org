@@ -31,6 +31,12 @@ Template.Verify.events({
 /* Verify: Helpers */
 /*****************************************************************************/
 Template.Verify.helpers({
+	gotcha: function() {
+		var gotchaString = "Gotcha";
+		if (Session.get("vote") === "yes") gotchaString = "Gotcha, yes it is";
+		if (Session.get("vote") === "no") gotchaString = "Gotcha, no it is";
+		return gotchaString;
+	},
 });
 
 /*****************************************************************************/
