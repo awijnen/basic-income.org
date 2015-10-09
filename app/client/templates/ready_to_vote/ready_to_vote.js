@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Explanation: Event Handlers */
+/* ExplainBasicIncome: Event Handlers */
 /*****************************************************************************/
-Template.Explanation.events({
+Template.ExplainBasicIncome.events({
 });
 
 /*****************************************************************************/
-/* Explanation: Helpers */
+/* ExplainBasicIncome: Helpers */
 /*****************************************************************************/
-Template.Explanation.helpers({
+Template.ExplainBasicIncome.helpers({
 });
 
 /*****************************************************************************/
-/* Explanation: Lifecycle Hooks */
+/* ExplainBasicIncome: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Explanation.onCreated(function () {
+Template.ExplainBasicIncome.onCreated(function () {
 });
 
-Template.Explanation.onRendered(function () {
+Template.ExplainBasicIncome.onRendered(function () {
 });
 
-Template.Explanation.onDestroyed(function () {
+Template.ExplainBasicIncome.onDestroyed(function () {
 });

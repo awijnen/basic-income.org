@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Explain: Event Handlers */
+/* Video: Event Handlers */
 /*****************************************************************************/
-Template.Explain.events({
+Template.Video.events({
 });
 
 /*****************************************************************************/
-/* Explain: Helpers */
+/* Video: Helpers */
 /*****************************************************************************/
-Template.Explain.helpers({
+Template.Video.helpers({
 });
 
 /*****************************************************************************/
-/* Explain: Lifecycle Hooks */
+/* Video: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Explain.onCreated(function () {
+Template.Video.onCreated(function () {
 });
 
-Template.Explain.onRendered(function () {
+Template.Video.onRendered(function () {
 });
 
-Template.Explain.onDestroyed(function () {
+Template.Video.onDestroyed(function () {
 });

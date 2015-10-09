@@ -25,9 +25,9 @@ Router.route('/thanks', {
 	where: 'client',
 })
 
-Router.route('/explain', {
-	name: 'explain',
+Router.route('/video', {
+	name: 'video',
 	controller: 'HomeController',
-	action: 'explain',
+	action: 'video',
 	where: 'client',
 })

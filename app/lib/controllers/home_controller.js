@@ -60,9 +60,10 @@ HomeController = RouteController.extend({
     this.render('Home');
     this.render('Thanks', {to: 'homeContent'});
   },
-  explain: function () {
+  video: function () {
     this.render('Home');
-    this.render('Explanation', {to: 'homeContent'});
+    this.render('Video', {to: 'homeContent'});
+    this.render('ReadyToVote', {to: 'topRight'});
   },
 
   onAfterAction: function () {
