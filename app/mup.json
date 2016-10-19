@@ -2,7 +2,7 @@
   // Server authentication info
   "servers": [
     {
-      "host": "188.166.72.144",
+      "host": "178.62.243.143",
       "username": "root",
       // "password": "growthtribe"
       // or pem file (ssh based authentication)
